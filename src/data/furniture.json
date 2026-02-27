@@ -1,0 +1,385 @@
+{
+  "store": {
+    "name": "Ashwi Furniture",
+    "subtitle": "Factory Direct Furniture",
+    "phone": "9860479751"
+  },
+  "products": [
+    {
+      "id": "mandir-compact-4ft",
+      "name": "Ashwi Mandir Compact (4ft)",
+      "category": "Mandir Units",
+      "subcategory": "Wooden Mandir",
+      "price": 14999,
+      "originalPrice": 16999,
+      "rating": 4.8,
+      "reviews": 64,
+      "size": "4ft height",
+      "tags": [
+        "Backlit OM",
+        "Smart Storage",
+        "Space Saving"
+      ],
+      "description": "A compact modern mandir designed for apartments and smaller prayer corners. Features an illuminated OM panel, integrated shelves, and enclosed storage for puja essentials.",
+      "image": "/images/mandir-size-chart.png"
+    },
+    {
+      "id": "mandir-grand-5ft",
+      "name": "Ashwi Mandir Grand (5ft)",
+      "category": "Mandir Units",
+      "subcategory": "Wooden Mandir",
+      "price": 29999,
+      "originalPrice": 32999,
+      "rating": 4.9,
+      "reviews": 52,
+      "size": "5ft height",
+      "tags": [
+        "Grand Size",
+        "Backlit OM",
+        "Premium Finish"
+      ],
+      "description": "A statement prayer unit for larger interiors, combining traditional detailing with a modern silhouette. Includes decorative backlighting, practical storage cabinets, and premium finishing.",
+      "image": "/images/mandir-size-chart.png"
+    },
+    {
+      "id": "mandir-white-led",
+      "name": "Ashwi Mandir White LED Edition",
+      "category": "Mandir Units",
+      "subcategory": "Compact Mandir",
+      "price": 9999,
+      "originalPrice": 9999,
+      "rating": 4.7,
+      "reviews": 81,
+      "size": "Approx. 1.5ft x 3.75ft",
+      "deliveryCharge": 500,
+      "tags": [
+        "LED Lighting",
+        "White Finish",
+        "Storage Cabinet"
+      ],
+      "description": "An elegant white-finish home mandir with built-in LED lighting and carved OM detailing. Designed to create a peaceful ambiance while keeping puja items neatly organized.",
+      "image": "/images/mandir-white-led-main.png"
+    },
+    {
+      "id": "dressing-hollywood",
+      "name": "Hollywood Style Dressing Table Set",
+      "category": "Bedroom",
+      "subcategory": "Dressing Tables",
+      "price": 20000,
+      "originalPrice": 22999,
+      "rating": 4.8,
+      "reviews": 39,
+      "tags": [
+        "10 LED Bulbs",
+        "5 Drawers",
+        "Stool Included"
+      ],
+      "description": "Premium vanity set with mirror-frame lighting for clear, shadow-free makeup visibility. Comes with five spacious drawers, a large mirror setup, and a matching cushioned stool.",
+      "image": "/images/dressing-hollywood.png"
+    },
+    {
+      "id": "tv-unit-collection",
+      "name": "Designer TV Unit Collection",
+      "category": "Living Room",
+      "subcategory": "TV Units",
+      "price": 35000,
+      "originalPrice": 35000,
+      "rating": 4.6,
+      "reviews": 45,
+      "tags": [
+        "Built-in Lighting",
+        "Display Shelves",
+        "Cabinet Storage"
+      ],
+      "description": "A curated range of contemporary TV unit styles featuring ambient lighting, closed and open storage, and glass-front display sections to enhance modern living spaces.",
+      "image": "/images/tv-unit-collection.png"
+    },
+    {
+      "id": "wardrobe-5x6-5-a",
+      "name": "Optimized Wardrobe 5ft x 6.5ft (Model A)",
+      "category": "Bedroom",
+      "subcategory": "Wardrobes",
+      "price": 45500,
+      "originalPrice": 49999,
+      "rating": 4.7,
+      "reviews": 33,
+      "size": "5ft x 6.5ft",
+      "deliveryCharge": 500,
+      "tags": [
+        "Extra Storage",
+        "Churi Hanger",
+        "Multi Section"
+      ],
+      "description": "Smartly partitioned wardrobe with hanging sections, shelves, and drawers for efficient organization. Includes a dedicated churi hanger and thoughtful internal layout.",
+      "image": "/images/wardrobe-model-a.png"
+    },
+    {
+      "id": "wardrobe-5x6-5-b",
+      "name": "Optimized Wardrobe 5ft x 6.5ft (Model B)",
+      "category": "Bedroom",
+      "subcategory": "Wardrobes",
+      "price": 45500,
+      "originalPrice": 45500,
+      "rating": 4.7,
+      "reviews": 28,
+      "size": "5ft x 6.5ft",
+      "deliveryCharge": 500,
+      "tags": [
+        "Extra Storage",
+        "Churi Hanger",
+        "Premium Build"
+      ],
+      "description": "A second finish option of our 5ft x 6.5ft optimized wardrobe. Built for high-capacity storage with durable construction, smooth access drawers, and hanging provisions.",
+      "image": "/images/wardrobe-model-b.png"
+    },
+    {
+      "id": "book-rack-3x5",
+      "name": "Glass Door Utility Cabinet",
+      "category": "Storage",
+      "subcategory": "Cabinets",
+      "price": 20000,
+      "originalPrice": 20000,
+      "rating": 4.5,
+      "reviews": 26,
+      "size": "3ft x 5ft",
+      "deliveryCharge": 500,
+      "tags": [
+        "Glass Door",
+        "Multi Shelf",
+        "Compact Storage"
+      ],
+      "description": "A practical utility cabinet with glass-front upper doors and enclosed lower storage. Designed for organized everyday use in living areas, offices, or multi-purpose rooms.",
+      "image": "/images/book-rack-3x5.png"
+    },
+    {
+      "id": "bubble-sofa",
+      "name": "Bubble Sofa",
+      "category": "Living Room",
+      "subcategory": "Sofas",
+      "price": 17000,
+      "originalPrice": 18999,
+      "rating": 4.7,
+      "reviews": 21,
+      "tags": [
+        "Rounded Design",
+        "Premium Upholstery",
+        "Modern Look"
+      ],
+      "description": "A contemporary sofa with soft curved geometry and plush seating comfort. Ideal for modern living spaces that need a bold yet elegant centerpiece.",
+      "image": "/images/bubble-sofa.png",
+      "size": "H 28in x W 30in x L 7.4ft"
+    },
+    {
+      "id": "butterfly-sofa-1",
+      "name": "Butterfly Sofa 1.0",
+      "category": "Living Room",
+      "subcategory": "Sofas",
+      "price": 17000,
+      "originalPrice": 17000,
+      "rating": 4.7,
+      "reviews": 19,
+      "tags": [
+        "Statement Form",
+        "Deep Seat",
+        "Designer Series"
+      ],
+      "description": "A designer sofa from the Butterfly collection featuring sculpted contours and a refined profile. Built to deliver premium comfort with standout visual appeal.",
+      "image": "/images/butterfly-sofa-2.0.png",
+      "size": "H 34in x W 32in x L 7.2ft"
+    },
+    {
+      "id": "butterfly-sofa-2",
+      "name": "Butterfly Sofa 2.0",
+      "category": "Living Room",
+      "subcategory": "Sofas",
+      "price": 16000,
+      "originalPrice": 16000,
+      "rating": 4.8,
+      "reviews": 23,
+      "tags": [
+        "Upgraded Design",
+        "Wide Arm",
+        "Luxury Finish"
+      ],
+      "description": "An upgraded Butterfly Sofa variant with enhanced seat depth and contemporary detailing. Designed for premium lounge comfort in stylish modern interiors.",
+      "image": "/images/butterfly-sofa-1.0.png",
+      "size": "H 34in x W 32in x L 7.3ft"
+    },
+    {
+      "id": "butterfly-sofa-3",
+      "name": "Butterfly Sofa 3.0",
+      "category": "Living Room",
+      "subcategory": "Sofas",
+      "price": 17000,
+      "originalPrice": 17000,
+      "rating": 4.8,
+      "reviews": 17,
+      "tags": [
+        "Premium Series",
+        "Signature Curves",
+        "Comfort Foam"
+      ],
+      "description": "The premium Butterfly 3.0 model combines a graceful silhouette with supportive cushioning. A high-impact piece for luxurious and design-forward living rooms.",
+      "image": "/images/butterfly-sofa-3.0.png",
+      "size": "H 34in x W 32in x L 7.4ft"
+    },
+    {
+      "id": "cocoon-sofa",
+      "name": "Cocoon Sofa",
+      "category": "Living Room",
+      "subcategory": "Sofas",
+      "price": 17000,
+      "originalPrice": 17000,
+      "rating": 4.8,
+      "reviews": 22,
+      "tags": [
+        "Enveloping Comfort",
+        "Soft Curves",
+        "Contemporary"
+      ],
+      "description": "A cozy cocoon-style sofa designed to create a warm and inviting seating zone. Balances artistic aesthetics with all-day comfort.",
+      "image": "/images/cocoon-sofa.png",
+      "size": "H 30in x W 32in x L 7ft"
+    },
+    {
+      "id": "echo-sofa",
+      "name": "Echo Sofa",
+      "category": "Living Room",
+      "subcategory": "Sofas",
+      "price": 16000,
+      "originalPrice": 16000,
+      "rating": 4.6,
+      "reviews": 20,
+      "tags": [
+        "Minimal Lines",
+        "Balanced Comfort",
+        "Modern Home"
+      ],
+      "description": "A minimalist sofa profile with clean lines and balanced cushioning. Suitable for both compact homes and spacious modern lounges.",
+      "image": "/images/cloud-sofa.png",
+      "size": "H 28in x W 32in x L 6.6ft"
+    },
+    {
+      "id": "cloud-sofa",
+      "name": "Cloud Sofa",
+      "category": "Living Room",
+      "subcategory": "Sofas",
+      "price": 17000,
+      "originalPrice": 18999,
+      "rating": 4.9,
+      "reviews": 31,
+      "tags": [
+        "Ultra Plush",
+        "Lounge Comfort",
+        "Premium Fabric"
+      ],
+      "description": "A plush, deep-seating sofa crafted for cloud-like lounging comfort. Perfect for family relaxation, movie nights, and premium interior styling.",
+      "image": "/images/echo-sofa.png",
+      "size": "H 34in x W 32in x L 7.4ft"
+    },
+    {
+      "id": "tufted-sofa",
+      "name": "Tufted Sofa",
+      "category": "Living Room",
+      "subcategory": "Sofas",
+      "price": 16000,
+      "originalPrice": 16000,
+      "rating": 4.7,
+      "reviews": 18,
+      "tags": [
+        "Tufted Back",
+        "Classic Styling",
+        "Luxury Seating"
+      ],
+      "description": "A tufted sofa that blends timeless elegance with modern comfort. Features detailed stitching and a premium finish suited for refined interiors.",
+      "image": "/images/tufted-sofa.png",
+      "size": "H 30in x W 32in x L 6.6ft"
+    },
+    {
+      "id": "cuddle-nest-arm-chair",
+      "name": "Cuddle Nest Arm Chair",
+      "category": "Living Room",
+      "subcategory": "Arm Chairs",
+      "price": 21500,
+      "originalPrice": 21500,
+      "rating": 4.7,
+      "reviews": 14,
+      "tags": [
+        "Accent Chair",
+        "Curved Back",
+        "Comfort Seat"
+      ],
+      "description": "A cozy accent arm chair with supportive form and soft cushioning. Designed as a premium single-seater for reading corners and lounge spaces.",
+      "image": "/images/cuddle-nest-arm-chair.png"
+    },
+    {
+      "id": "pokemon-arm-chair",
+      "name": "Pokemon Arm Chair",
+      "category": "Living Room",
+      "subcategory": "Arm Chairs",
+      "price": 21500,
+      "originalPrice": 21500,
+      "rating": 4.6,
+      "reviews": 11,
+      "tags": [
+        "Compact Seat",
+        "Modern Accent",
+        "Soft Upholstery"
+      ],
+      "description": "A stylish modern arm chair with a compact footprint and plush seating comfort. Works well as a statement accent in bedrooms and living areas.",
+      "image": "/images/pokemon-arm-chair.png"
+    },
+    {
+      "id": "high-back-chair",
+      "name": "High Back Lounge Chair",
+      "category": "Living Room",
+      "subcategory": "Chairs",
+      "price": 21500,
+      "originalPrice": 21500,
+      "rating": 4.5,
+      "reviews": 13,
+      "tags": [
+        "High Back",
+        "Ergonomic Support",
+        "Single Seater"
+      ],
+      "description": "A high-back lounge chair engineered for upright support and extended sitting comfort. Suitable for both living rooms and office lounge corners.",
+      "image": "/images/high-back-chair.png",
+      "size": "H 44in x W 32in"
+    },
+    {
+      "id": "bed-bench",
+      "name": "Bed-End Bench",
+      "category": "Bedroom",
+      "subcategory": "Benches",
+      "price": 17000,
+      "originalPrice": 17000,
+      "rating": 4.5,
+      "reviews": 10,
+      "tags": [
+        "Bedroom Accent",
+        "Padded Top",
+        "Utility Seating"
+      ],
+      "description": "A functional bed-end bench that adds seating and style to bedroom layouts. Offers a clean silhouette with durable finishing for everyday use.",
+      "image": "/images/bed-bench.png"
+    },
+    {
+      "id": "ottoman-seat",
+      "name": "Designer Ottoman",
+      "category": "Living Room",
+      "subcategory": "Ottomans",
+      "price": 8500,
+      "originalPrice": 8500,
+      "rating": 4.4,
+      "reviews": 12,
+      "tags": [
+        "Compact Utility",
+        "Footrest",
+        "Accent Piece"
+      ],
+      "description": "A multi-purpose ottoman that can be used as a footrest, extra seat, or decorative accent. Ideal for compact and flexible living spaces.",
+      "image": "/images/ottoman.png"
+    }
+  ]
+}
