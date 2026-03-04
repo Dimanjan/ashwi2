@@ -17,7 +17,7 @@ function Footer() {
         <div>
           <h4>WhatsApp</h4>
           <a href="https://wa.me/9779860479751" target="_blank" rel="noopener noreferrer">
-            Chat on +977 98604 79751
+            Contact
           </a>
         </div>
       </div>
