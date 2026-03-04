@@ -3,9 +3,9 @@ function AboutPage() {
     <main className="container about-page">
       <section className="about-card">
         <p className="eyebrow">About Ashwi Furniture</p>
-        <h2>Trusted Furniture Store in Nepal</h2>
+        <h2>Trusted Furniture Factory in Nepal</h2>
         <p>
-          Ashwi Furniture is a furniture store focused on beautiful designs, reliable build quality,
+          Ashwi Furniture is a furniture factory focused on beautiful designs, reliable build quality,
           and high-quality finishing for modern Nepali homes.
         </p>
         <p>
@@ -19,7 +19,7 @@ function AboutPage() {
         <ul className="about-list">
           <li>High finishing and durable materials</li>
           <li>Factory-direct pricing</li>
-          <li>Clear communication on WhatsApp</li>
+          <li>Clear support and communication</li>
           <li>Delivery support across service areas</li>
         </ul>
       </section>

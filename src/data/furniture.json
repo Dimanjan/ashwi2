@@ -380,6 +380,25 @@
       ],
       "description": "A multi-purpose ottoman that can be used as a footrest, extra seat, or decorative accent. Ideal for compact and flexible living spaces.",
       "image": "/images/ottoman.png"
+    },
+    {
+      "id": "perfect-couple-bed",
+      "name": "Perfect Couple Bed Collection",
+      "category": "Bedroom",
+      "subcategory": "Beds",
+      "price": 30000,
+      "originalPrice": 30000,
+      "priceOnRequest": true,
+      "rating": 4.8,
+      "reviews": 18,
+      "tags": [
+        "King Beds",
+        "Queen Beds",
+        "Modern Low Beds"
+      ],
+      "size": "King, Queen and Low-bed options",
+      "description": "Your 'Perfect Couple, Perfect Bed' awaits. Discover a thoughtfully designed bed collection made to become the centerpiece of your shared bedroom and support truly restful nights. Explore spacious king beds for extra comfort, classic queen beds for a balanced feel, and modern low beds for a sleek contemporary look. Crafted with care, high finishing, and long-lasting quality, these beds are built to elevate your space and your daily comfort. Located in Kathmandu. Send a message to get full details on beds and other furniture.",
+      "image": "/images/bed.png"
     }
   ]
 }

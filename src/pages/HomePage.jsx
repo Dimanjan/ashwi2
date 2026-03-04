@@ -90,7 +90,7 @@ function HomePage({ products, phone }) {
       <section className="hero">
         <div className="container hero-content">
           <p className="eyebrow">Premium Furniture Collections</p>
-          <h2>Professional Furniture Storefront for Ashwi Furniture</h2>
+          <h2>Professional Furniture Factory Collection by Ashwi Furniture</h2>
           <p>
             Browse products by category and subcategory, compare pricing, and contact directly on
             WhatsApp for quick factory pricing.

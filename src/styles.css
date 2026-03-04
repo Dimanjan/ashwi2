@@ -539,6 +539,14 @@ a {
   font-size: 0.85rem;
 }
 
+.powered-footer {
+  text-align: center;
+  margin: 0.4rem 0 0;
+  color: #D4C8BC;
+  font-weight: 700;
+  font-size: 0.86rem;
+}
+
 /* ─── About Page ─── */
 
 .about-page,

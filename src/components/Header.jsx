@@ -8,7 +8,7 @@ function Header() {
           <img className="brand-logo-image" src="/images/dressing-hollywood.png" alt="Ashwi Furniture Logo" />
           <div>
             <h1>Ashwi Furniture</h1>
-            <p>Factory Direct Furniture Store</p>
+            <p>Factory Direct Furniture</p>
           </div>
         </div>
         <nav className="main-nav" aria-label="Primary">

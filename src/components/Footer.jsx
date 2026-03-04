@@ -14,14 +14,10 @@ function Footer() {
           <Link to="/about">About Us</Link>
           <Link to="/about">Contact</Link>
         </div>
-        <div>
-          <h4>WhatsApp</h4>
-          <a href="https://wa.me/9779860479751" target="_blank" rel="noopener noreferrer">
-            Contact
-          </a>
-        </div>
+        <div />
       </div>
       <p className="copyright">© {new Date().getFullYear()} Ashwi Furniture. All rights reserved.</p>
+      <p className="powered-footer">Powered by Sajedar</p>
     </footer>
   );
 }

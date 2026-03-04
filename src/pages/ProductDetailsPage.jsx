@@ -17,13 +17,16 @@ function ProductDetailsPage({ products, phone }) {
     );
   }
 
+  const isPriceOnRequest = Boolean(product.priceOnRequest);
   const hasDiscount = Number(product.originalPrice) > Number(product.price);
   const discountPercent = hasDiscount
     ? Math.round(((product.originalPrice - product.price) / product.originalPrice) * 100)
     : 0;
 
   const message = encodeURIComponent(
-    `Hi Ashwi Furniture, I am interested in ${product.name} (${product.category} > ${product.subcategory}) priced at रु ${product.price.toLocaleString('en-IN')}.`
+    isPriceOnRequest
+      ? `Hi Ashwi Furniture, I am interested in ${product.name} (${product.category} > ${product.subcategory}). Please share details.`
+      : `Hi Ashwi Furniture, I am interested in ${product.name} (${product.category} > ${product.subcategory}) priced at रु ${product.price.toLocaleString('en-IN')}.`
   );
 
   return (
@@ -39,9 +42,15 @@ function ProductDetailsPage({ products, phone }) {
           <p className="details-description">{product.description}</p>
 
           <div className="price-row details-price-row">
-            {hasDiscount && <span className="strike">रु {product.originalPrice.toLocaleString('en-IN')}</span>}
-            <span className="price">रु {product.price.toLocaleString('en-IN')}</span>
-            {hasDiscount && <span className="discount">-{discountPercent}% OFF</span>}
+            {isPriceOnRequest ? (
+              <span className="price">Price on request</span>
+            ) : (
+              <>
+                {hasDiscount && <span className="strike">रु {product.originalPrice.toLocaleString('en-IN')}</span>}
+                <span className="price">रु {product.price.toLocaleString('en-IN')}</span>
+                {hasDiscount && <span className="discount">-{discountPercent}% OFF</span>}
+              </>
+            )}
           </div>
 
           {(product.size || product.deliveryCharge) && (
