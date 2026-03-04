@@ -21,7 +21,7 @@
         "Space Saving"
       ],
       "description": "A compact modern mandir designed for apartments and smaller prayer corners. Features an illuminated OM panel, integrated shelves, and enclosed storage for puja essentials.",
-      "image": "/images/mandir-size-chart.png"
+      "image": "/images/mandir-size-chart.webp"
     },
     {
       "id": "mandir-grand-5ft",
@@ -39,7 +39,7 @@
         "Premium Finish"
       ],
       "description": "A statement prayer unit for larger interiors, combining traditional detailing with a modern silhouette. Includes decorative backlighting, practical storage cabinets, and premium finishing.",
-      "image": "/images/mandir-size-chart.png"
+      "image": "/images/mandir-size-chart.webp"
     },
     {
       "id": "mandir-white-led",
@@ -58,7 +58,7 @@
         "Storage Cabinet"
       ],
       "description": "An elegant white-finish home mandir with built-in LED lighting and carved OM detailing. Designed to create a peaceful ambiance while keeping puja items neatly organized.",
-      "image": "/images/mandir-white-led-main.png"
+      "image": "/images/mandir-white-led-main.webp"
     },
     {
       "id": "dressing-hollywood",
@@ -75,7 +75,7 @@
         "Stool Included"
       ],
       "description": "Premium vanity set with mirror-frame lighting for clear, shadow-free makeup visibility. Comes with five spacious drawers, a large mirror setup, and a matching cushioned stool.",
-      "image": "/images/dressing-hollywood.png"
+      "image": "/images/dressing-hollywood.webp"
     },
     {
       "id": "tv-unit-collection",
@@ -92,7 +92,7 @@
         "Cabinet Storage"
       ],
       "description": "A curated range of contemporary TV unit styles featuring ambient lighting, closed and open storage, and glass-front display sections to enhance modern living spaces.",
-      "image": "/images/tv-unit-collection.png"
+      "image": "/images/tv-unit-collection.webp"
     },
     {
       "id": "wardrobe-5x6-5-a",
@@ -111,7 +111,7 @@
         "Multi Section"
       ],
       "description": "Smartly partitioned wardrobe with hanging sections, shelves, and drawers for efficient organization. Includes a dedicated churi hanger and thoughtful internal layout.",
-      "image": "/images/wardrobe-model-a.png"
+      "image": "/images/wardrobe-model-a.webp"
     },
     {
       "id": "wardrobe-5x6-5-b",
@@ -130,7 +130,7 @@
         "Premium Build"
       ],
       "description": "A second finish option of our 5ft x 6.5ft optimized wardrobe. Built for high-capacity storage with durable construction, smooth access drawers, and hanging provisions.",
-      "image": "/images/wardrobe-model-b.png"
+      "image": "/images/wardrobe-model-b.webp"
     },
     {
       "id": "book-rack-3x5",
@@ -149,7 +149,7 @@
         "Compact Storage"
       ],
       "description": "A practical utility cabinet with glass-front upper doors and enclosed lower storage. Designed for organized everyday use in living areas, offices, or multi-purpose rooms.",
-      "image": "/images/book-rack-3x5.png"
+      "image": "/images/book-rack-3x5.webp"
     },
     {
       "id": "bubble-sofa",
@@ -166,7 +166,7 @@
         "Modern Look"
       ],
       "description": "A contemporary sofa with soft curved geometry and plush seating comfort. Ideal for modern living spaces that need a bold yet elegant centerpiece.",
-      "image": "/images/bubble-sofa.png",
+      "image": "/images/bubble-sofa.webp",
       "size": "H 28in x W 30in x L 7.4ft"
     },
     {
@@ -184,7 +184,7 @@
         "Designer Series"
       ],
       "description": "A designer sofa from the Butterfly collection featuring sculpted contours and a refined profile. Built to deliver premium comfort with standout visual appeal.",
-      "image": "/images/butterfly-sofa-2.0.png",
+      "image": "/images/butterfly-sofa-2.0.webp",
       "size": "H 34in x W 32in x L 7.2ft"
     },
     {
@@ -202,7 +202,7 @@
         "Luxury Finish"
       ],
       "description": "An upgraded Butterfly Sofa variant with enhanced seat depth and contemporary detailing. Designed for premium lounge comfort in stylish modern interiors.",
-      "image": "/images/butterfly-sofa-1.0.png",
+      "image": "/images/butterfly-sofa-1.0.webp",
       "size": "H 34in x W 32in x L 7.3ft"
     },
     {
@@ -220,7 +220,7 @@
         "Comfort Foam"
       ],
       "description": "The premium Butterfly 3.0 model combines a graceful silhouette with supportive cushioning. A high-impact piece for luxurious and design-forward living rooms.",
-      "image": "/images/butterfly-sofa-3.0.png",
+      "image": "/images/butterfly-sofa-3.0.webp",
       "size": "H 34in x W 32in x L 7.4ft"
     },
     {
@@ -238,7 +238,7 @@
         "Contemporary"
       ],
       "description": "A cozy cocoon-style sofa designed to create a warm and inviting seating zone. Balances artistic aesthetics with all-day comfort.",
-      "image": "/images/cocoon-sofa.png",
+      "image": "/images/cocoon-sofa.webp",
       "size": "H 30in x W 32in x L 7ft"
     },
     {
@@ -256,7 +256,7 @@
         "Modern Home"
       ],
       "description": "A minimalist sofa profile with clean lines and balanced cushioning. Suitable for both compact homes and spacious modern lounges.",
-      "image": "/images/cloud-sofa.png",
+      "image": "/images/cloud-sofa.webp",
       "size": "H 28in x W 32in x L 6.6ft"
     },
     {
@@ -274,7 +274,7 @@
         "Premium Fabric"
       ],
       "description": "A plush, deep-seating sofa crafted for cloud-like lounging comfort. Perfect for family relaxation, movie nights, and premium interior styling.",
-      "image": "/images/echo-sofa.png",
+      "image": "/images/echo-sofa.webp",
       "size": "H 34in x W 32in x L 7.4ft"
     },
     {
@@ -292,7 +292,7 @@
         "Luxury Seating"
       ],
       "description": "A tufted sofa that blends timeless elegance with modern comfort. Features detailed stitching and a premium finish suited for refined interiors.",
-      "image": "/images/tufted-sofa.png",
+      "image": "/images/tufted-sofa.webp",
       "size": "H 30in x W 32in x L 6.6ft"
     },
     {
@@ -310,7 +310,7 @@
         "Comfort Seat"
       ],
       "description": "A cozy accent arm chair with supportive form and soft cushioning. Designed as a premium single-seater for reading corners and lounge spaces.",
-      "image": "/images/cuddle-nest-arm-chair.png"
+      "image": "/images/cuddle-nest-arm-chair.webp"
     },
     {
       "id": "pokemon-arm-chair",
@@ -327,7 +327,7 @@
         "Soft Upholstery"
       ],
       "description": "A stylish modern arm chair with a compact footprint and plush seating comfort. Works well as a statement accent in bedrooms and living areas.",
-      "image": "/images/pokemon-arm-chair.png"
+      "image": "/images/pokemon-arm-chair.webp"
     },
     {
       "id": "high-back-chair",
@@ -344,7 +344,7 @@
         "Single Seater"
       ],
       "description": "A high-back lounge chair engineered for upright support and extended sitting comfort. Suitable for both living rooms and office lounge corners.",
-      "image": "/images/high-back-chair.png",
+      "image": "/images/high-back-chair.webp",
       "size": "H 44in x W 32in"
     },
     {
@@ -362,7 +362,7 @@
         "Utility Seating"
       ],
       "description": "A functional bed-end bench that adds seating and style to bedroom layouts. Offers a clean silhouette with durable finishing for everyday use.",
-      "image": "/images/bed-bench.png"
+      "image": "/images/bed-bench.webp"
     },
     {
       "id": "ottoman-seat",
@@ -379,7 +379,7 @@
         "Accent Piece"
       ],
       "description": "A multi-purpose ottoman that can be used as a footrest, extra seat, or decorative accent. Ideal for compact and flexible living spaces.",
-      "image": "/images/ottoman.png"
+      "image": "/images/ottoman.webp"
     }
   ]
 }
