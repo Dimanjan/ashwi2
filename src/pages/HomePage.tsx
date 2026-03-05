@@ -12,9 +12,19 @@ interface HomePageProps {
   products: Product[];
   phone: string;
   onAddToCart: (product: Product) => void;
+  getCartQuantity: (productId: string) => number;
+  onIncreaseQuantity: (product: Product) => void;
+  onDecreaseQuantity: (productId: string) => void;
 }
 
-function HomePage({ products, phone, onAddToCart }: HomePageProps) {
+function HomePage({
+  products,
+  phone,
+  onAddToCart,
+  getCartQuantity,
+  onIncreaseQuantity,
+  onDecreaseQuantity,
+}: HomePageProps) {
   const [searchTerm, setSearchTerm] = useState('');
   const [selectedCategory, setSelectedCategory] = useState('all');
   const [selectedSubcategory, setSelectedSubcategory] = useState('all');
@@ -134,6 +144,9 @@ function HomePage({ products, phone, onAddToCart }: HomePageProps) {
                       product={product}
                       phone={phone}
                       onAddToCart={onAddToCart}
+                      quantityInCart={getCartQuantity(product.id)}
+                      onIncreaseQuantity={onIncreaseQuantity}
+                      onDecreaseQuantity={onDecreaseQuantity}
                     />
                   ))}
                 </div>

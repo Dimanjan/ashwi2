@@ -20,6 +20,31 @@ interface CustomerDetails {
 const DISCORD_WEBHOOK_URL =
   'https://discord.com/api/webhooks/1479036287129489562/1IKS-_JqwbExD1WgHxsMABdful7QpoyvGg8XStjZx7sk1869Ib5fytTgNmEqP3wPCGqc';
 
+async function sendDiscordWebhook(payload: unknown) {
+  const jsonBody = JSON.stringify(payload);
+  try {
+    const response = await fetch(DISCORD_WEBHOOK_URL, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: jsonBody,
+    });
+
+    if (!response.ok) {
+      throw new Error(`Webhook failed: ${response.status}`);
+    }
+
+    return { ok: true, verified: true };
+  } catch {
+    await fetch(DISCORD_WEBHOOK_URL, {
+      method: 'POST',
+      mode: 'no-cors',
+      headers: { 'Content-Type': 'text/plain' },
+      body: jsonBody,
+    });
+    return { ok: true, verified: false };
+  }
+}
+
 function CartPage({
   cartItems,
   onUpdateQuantity,
@@ -97,15 +122,13 @@ function CartPage({
     };
 
     try {
-      await fetch(DISCORD_WEBHOOK_URL, {
-        method: 'POST',
-        mode: 'no-cors',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify(payload),
-      });
-
+      const webhookResult = await sendDiscordWebhook(payload);
       setStatusType('success');
-      setStatusMessage('Order submitted. We will contact you shortly.');
+      setStatusMessage(
+        webhookResult.verified
+          ? 'Order submitted. We will contact you shortly.'
+          : 'Order submitted. If you do not hear back soon, please contact us on WhatsApp.'
+      );
       onClearCart();
       setCustomer({
         name: '',
@@ -221,6 +244,8 @@ function CartPage({
             <input
               className="w-full rounded-lg border border-line p-3 bg-bg"
               placeholder="Phone Number *"
+              type="tel"
+              pattern="[0-9+\\-()\\s]{7,20}"
               required
               value={customer.phone}
               onChange={(event) =>

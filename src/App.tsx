@@ -1,5 +1,5 @@
 import { Navigate, Route, Routes } from 'react-router-dom';
-import { useMemo, useState } from 'react';
+import { useEffect, useMemo, useState } from 'react';
 import Header from './components/Header';
 import Footer from './components/Footer';
 import HomePage from './pages/HomePage';
@@ -30,15 +30,41 @@ export interface CartItem {
   quantity: number;
 }
 
+const CART_STORAGE_KEY = 'ashwi_cart_items_v1';
+
 function App() {
   const products = furnitureData.products as Product[];
   const phone = furnitureData.store.phone;
-  const [cartItems, setCartItems] = useState<CartItem[]>([]);
+  const [cartItems, setCartItems] = useState<CartItem[]>(() => {
+    try {
+      const raw = localStorage.getItem(CART_STORAGE_KEY);
+      if (!raw) return [];
+      const parsed = JSON.parse(raw) as CartItem[];
+      if (!Array.isArray(parsed)) return [];
+      return parsed.filter(
+        (item) =>
+          item &&
+          item.product &&
+          typeof item.product.id === 'string' &&
+          typeof item.quantity === 'number' &&
+          item.quantity > 0
+      );
+    } catch {
+      return [];
+    }
+  });
+
+  useEffect(() => {
+    localStorage.setItem(CART_STORAGE_KEY, JSON.stringify(cartItems));
+  }, [cartItems]);
 
   const cartCount = useMemo(
     () => cartItems.reduce((total, item) => total + item.quantity, 0),
     [cartItems]
   );
+
+  const getCartQuantity = (productId: string) =>
+    cartItems.find((item) => item.product.id === productId)?.quantity ?? 0;
 
   const handleAddToCart = (product: Product) => {
     setCartItems((prev) => {
@@ -84,6 +110,11 @@ function App() {
                 products={products}
                 phone={phone}
                 onAddToCart={handleAddToCart}
+                getCartQuantity={getCartQuantity}
+                onIncreaseQuantity={(product) => handleAddToCart(product)}
+                onDecreaseQuantity={(productId) =>
+                  handleUpdateQuantity(productId, getCartQuantity(productId) - 1)
+                }
               />
             }
           />
@@ -95,6 +126,11 @@ function App() {
                 products={products}
                 phone={phone}
                 onAddToCart={handleAddToCart}
+                cartQuantity={getCartQuantity}
+                onIncreaseQuantity={(product) => handleAddToCart(product)}
+                onDecreaseQuantity={(productId) =>
+                  handleUpdateQuantity(productId, getCartQuantity(productId) - 1)
+                }
               />
             }
           />

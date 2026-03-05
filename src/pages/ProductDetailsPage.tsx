@@ -5,9 +5,19 @@ interface ProductDetailsPageProps {
   products: Product[];
   phone: string;
   onAddToCart: (product: Product) => void;
+  cartQuantity: (productId: string) => number;
+  onIncreaseQuantity: (product: Product) => void;
+  onDecreaseQuantity: (productId: string) => void;
 }
 
-function ProductDetailsPage({ products, phone, onAddToCart }: ProductDetailsPageProps) {
+function ProductDetailsPage({
+  products,
+  phone,
+  onAddToCart,
+  cartQuantity,
+  onIncreaseQuantity,
+  onDecreaseQuantity,
+}: ProductDetailsPageProps) {
   const { productId } = useParams<{ productId: string }>();
   const product = products.find((p) => p.id === productId);
 
@@ -28,6 +38,7 @@ function ProductDetailsPage({ products, phone, onAddToCart }: ProductDetailsPage
   const message = encodeURIComponent(
     `Hi Ashwi Furniture, I want to order ${product.name} priced at रु ${product.price.toLocaleString('en-IN')}.`
   );
+  const quantityInCart = cartQuantity(product.id);
 
   return (
     <main className="w-[min(1240px,calc(100%-2rem))] mx-auto py-10">
@@ -84,13 +95,46 @@ function ProductDetailsPage({ products, phone, onAddToCart }: ProductDetailsPage
           </dl>
 
           <div className="mt-auto pt-6 flex flex-col sm:flex-row gap-4 border-t border-line">
-            <button
-              className="flex-1 inline-flex justify-center items-center rounded-lg font-bold py-3.5 px-6 text-[1.05rem] bg-brand text-white border border-brand hover:bg-brand-dark transition-colors shadow-none cursor-pointer"
-              onClick={() => onAddToCart(product)}
-              type="button"
-            >
-              Add to Cart
-            </button>
+            <div className="flex-1">
+              {quantityInCart > 0 ? (
+                <div className="rounded-lg border border-brand/30 bg-tag-bg p-3">
+                  <p className="m-0 mb-2 text-[0.9rem] font-semibold text-brand-deep">
+                    {quantityInCart} item{quantityInCart > 1 ? 's' : ''} in cart
+                  </p>
+                  <div className="flex items-center gap-2">
+                    <button
+                      className="flex-1 inline-flex justify-center items-center rounded-md font-bold py-2.5 text-[1.1rem] bg-surface text-brand-deep border border-line hover:bg-bg transition-colors cursor-pointer"
+                      onClick={() => onDecreaseQuantity(product.id)}
+                      type="button"
+                    >
+                      -
+                    </button>
+                    <span className="min-w-12 text-center font-bold text-brand-deep">{quantityInCart}</span>
+                    <button
+                      className="flex-1 inline-flex justify-center items-center rounded-md font-bold py-2.5 text-[1.1rem] bg-brand text-white border border-brand hover:bg-brand-dark transition-colors cursor-pointer"
+                      onClick={() => onIncreaseQuantity(product)}
+                      type="button"
+                    >
+                      +
+                    </button>
+                  </div>
+                  <Link
+                    className="mt-2 inline-flex justify-center items-center w-full rounded-md font-semibold py-2.5 px-4 text-[0.92rem] bg-brand-deep text-white border border-brand-deep hover:bg-[#4F2F16] transition-colors"
+                    to="/cart"
+                  >
+                    Proceed to Checkout
+                  </Link>
+                </div>
+              ) : (
+                <button
+                  className="w-full inline-flex justify-center items-center rounded-lg font-bold py-3.5 px-6 text-[1.05rem] bg-brand text-white border border-brand hover:bg-brand-dark transition-colors shadow-none cursor-pointer"
+                  onClick={() => onAddToCart(product)}
+                  type="button"
+                >
+                  Add to Cart
+                </button>
+              )}
+            </div>
             <a
               className="flex-1 inline-flex justify-center items-center rounded-lg font-bold py-3.5 px-6 text-[1.05rem] bg-success text-white border border-[#268C4F] hover:bg-[#268C4F] transition-colors shadow-none"
               href={`https://wa.me/977${phone}?text=${message}`}

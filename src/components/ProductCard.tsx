@@ -5,9 +5,19 @@ interface ProductCardProps {
   product: Product;
   phone: string;
   onAddToCart: (product: Product) => void;
+  quantityInCart: number;
+  onIncreaseQuantity: (product: Product) => void;
+  onDecreaseQuantity: (productId: string) => void;
 }
 
-function ProductCard({ product, phone, onAddToCart }: ProductCardProps) {
+function ProductCard({
+  product,
+  phone,
+  onAddToCart,
+  quantityInCart,
+  onIncreaseQuantity,
+  onDecreaseQuantity,
+}: ProductCardProps) {
   const hasDiscount = Number(product.originalPrice) > Number(product.price);
   const discountPercent = hasDiscount
     ? Math.round(((product.originalPrice - product.price) / product.originalPrice) * 100)
@@ -61,13 +71,44 @@ function ProductCard({ product, phone, onAddToCart }: ProductCardProps) {
         )}
 
         <div className="grid grid-cols-1 gap-2 mt-auto">
-          <button
-            className="inline-flex justify-center items-center w-full rounded-lg font-semibold py-2.5 px-3.5 text-[0.88rem] bg-brand text-white border border-brand hover:bg-brand-dark transition-colors cursor-pointer"
-            onClick={() => onAddToCart(product)}
-            type="button"
-          >
-            Add to Cart
-          </button>
+          {quantityInCart > 0 ? (
+            <div className="rounded-lg border border-brand/30 bg-tag-bg p-2.5">
+              <p className="m-0 mb-2 text-[0.84rem] font-semibold text-brand-deep">
+                {quantityInCart} item{quantityInCart > 1 ? 's' : ''} in cart
+              </p>
+              <div className="flex items-center gap-2">
+                <button
+                  className="flex-1 inline-flex justify-center items-center rounded-md font-bold py-2 text-[1rem] bg-surface text-brand-deep border border-line hover:bg-bg transition-colors cursor-pointer"
+                  onClick={() => onDecreaseQuantity(product.id)}
+                  type="button"
+                >
+                  -
+                </button>
+                <span className="min-w-10 text-center font-bold text-brand-deep">{quantityInCart}</span>
+                <button
+                  className="flex-1 inline-flex justify-center items-center rounded-md font-bold py-2 text-[1rem] bg-brand text-white border border-brand hover:bg-brand-dark transition-colors cursor-pointer"
+                  onClick={() => onIncreaseQuantity(product)}
+                  type="button"
+                >
+                  +
+                </button>
+              </div>
+              <Link
+                className="mt-2 inline-flex justify-center items-center w-full rounded-md font-semibold py-2 px-3 text-[0.84rem] bg-brand-deep text-white border border-brand-deep hover:bg-[#4F2F16] transition-colors"
+                to="/cart"
+              >
+                Proceed to Checkout
+              </Link>
+            </div>
+          ) : (
+            <button
+              className="inline-flex justify-center items-center w-full rounded-lg font-semibold py-2.5 px-3.5 text-[0.88rem] bg-brand text-white border border-brand hover:bg-brand-dark transition-colors cursor-pointer"
+              onClick={() => onAddToCart(product)}
+              type="button"
+            >
+              Add to Cart
+            </button>
+          )}
           <Link className="inline-flex justify-center items-center w-full rounded-lg font-semibold py-2.5 px-3.5 text-[0.88rem] bg-tag-bg text-brand-deep border border-line hover:bg-[#E8DDD0] transition-colors" to={`/product/${product.id}`}>
             View Details
           </Link>

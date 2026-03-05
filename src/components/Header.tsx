@@ -20,8 +20,21 @@ function Header({ cartCount }: HeaderProps) {
           <NavLink to="/" className="hover:text-brand">Collections</NavLink>
           <NavLink to="/about" className={({ isActive }) => (isActive ? 'text-brand' : 'hover:text-brand')}>About</NavLink>
           <NavLink to="/about" className="hover:text-brand">Contact</NavLink>
-          <NavLink to="/cart" className={({ isActive }) => (isActive ? 'text-brand' : 'hover:text-brand')}>
-            Cart ({cartCount})
+          <NavLink
+            to="/cart"
+            className={({ isActive }) =>
+              `inline-flex items-center gap-2 rounded-full border px-3 py-1.5 transition-colors ${
+                isActive
+                  ? 'text-brand border-brand bg-tag-bg'
+                  : 'border-line hover:border-brand hover:text-brand bg-surface'
+              }`
+            }
+          >
+            <span className="text-base leading-none" aria-hidden="true">🛒</span>
+            <span>Cart</span>
+            <span className="min-w-6 h-6 rounded-full bg-brand text-white text-[0.78rem] inline-flex items-center justify-center px-1.5 font-bold">
+              {cartCount}
+            </span>
           </NavLink>
         </nav>
       </div>
