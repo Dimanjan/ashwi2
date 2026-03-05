@@ -4,9 +4,10 @@ import { Product } from '../App';
 interface ProductCardProps {
   product: Product;
   phone: string;
+  onAddToCart: (product: Product) => void;
 }
 
-function ProductCard({ product, phone }: ProductCardProps) {
+function ProductCard({ product, phone, onAddToCart }: ProductCardProps) {
   const hasDiscount = Number(product.originalPrice) > Number(product.price);
   const discountPercent = hasDiscount
     ? Math.round(((product.originalPrice - product.price) / product.originalPrice) * 100)
@@ -60,6 +61,13 @@ function ProductCard({ product, phone }: ProductCardProps) {
         )}
 
         <div className="grid grid-cols-1 gap-2 mt-auto">
+          <button
+            className="inline-flex justify-center items-center w-full rounded-lg font-semibold py-2.5 px-3.5 text-[0.88rem] bg-brand text-white border border-brand hover:bg-brand-dark transition-colors cursor-pointer"
+            onClick={() => onAddToCart(product)}
+            type="button"
+          >
+            Add to Cart
+          </button>
           <Link className="inline-flex justify-center items-center w-full rounded-lg font-semibold py-2.5 px-3.5 text-[0.88rem] bg-tag-bg text-brand-deep border border-line hover:bg-[#E8DDD0] transition-colors" to={`/product/${product.id}`}>
             View Details
           </Link>

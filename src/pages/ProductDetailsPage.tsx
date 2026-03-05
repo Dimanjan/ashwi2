@@ -4,9 +4,10 @@ import { Product } from '../App';
 interface ProductDetailsPageProps {
   products: Product[];
   phone: string;
+  onAddToCart: (product: Product) => void;
 }
 
-function ProductDetailsPage({ products, phone }: ProductDetailsPageProps) {
+function ProductDetailsPage({ products, phone, onAddToCart }: ProductDetailsPageProps) {
   const { productId } = useParams<{ productId: string }>();
   const product = products.find((p) => p.id === productId);
 
@@ -83,6 +84,13 @@ function ProductDetailsPage({ products, phone }: ProductDetailsPageProps) {
           </dl>
 
           <div className="mt-auto pt-6 flex flex-col sm:flex-row gap-4 border-t border-line">
+            <button
+              className="flex-1 inline-flex justify-center items-center rounded-lg font-bold py-3.5 px-6 text-[1.05rem] bg-brand text-white border border-brand hover:bg-brand-dark transition-colors shadow-none cursor-pointer"
+              onClick={() => onAddToCart(product)}
+              type="button"
+            >
+              Add to Cart
+            </button>
             <a
               className="flex-1 inline-flex justify-center items-center rounded-lg font-bold py-3.5 px-6 text-[1.05rem] bg-success text-white border border-[#268C4F] hover:bg-[#268C4F] transition-colors shadow-none"
               href={`https://wa.me/977${phone}?text=${message}`}

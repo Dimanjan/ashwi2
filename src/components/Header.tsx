@@ -1,6 +1,10 @@
 import { NavLink } from 'react-router-dom';
 
-function Header() {
+interface HeaderProps {
+  cartCount: number;
+}
+
+function Header({ cartCount }: HeaderProps) {
   return (
     <header className="sticky top-0 z-20 bg-surface border-b border-line">
       <div className="w-[min(1240px,calc(100%-2rem))] mx-auto flex flex-col md:flex-row items-stretch md:items-center justify-between gap-4 py-3">
@@ -16,6 +20,9 @@ function Header() {
           <NavLink to="/" className="hover:text-brand">Collections</NavLink>
           <NavLink to="/about" className={({ isActive }) => (isActive ? 'text-brand' : 'hover:text-brand')}>About</NavLink>
           <NavLink to="/about" className="hover:text-brand">Contact</NavLink>
+          <NavLink to="/cart" className={({ isActive }) => (isActive ? 'text-brand' : 'hover:text-brand')}>
+            Cart ({cartCount})
+          </NavLink>
         </nav>
       </div>
     </header>

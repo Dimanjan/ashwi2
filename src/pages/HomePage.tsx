@@ -11,9 +11,10 @@ import { Product } from '../App';
 interface HomePageProps {
   products: Product[];
   phone: string;
+  onAddToCart: (product: Product) => void;
 }
 
-function HomePage({ products, phone }: HomePageProps) {
+function HomePage({ products, phone, onAddToCart }: HomePageProps) {
   const [searchTerm, setSearchTerm] = useState('');
   const [selectedCategory, setSelectedCategory] = useState('all');
   const [selectedSubcategory, setSelectedSubcategory] = useState('all');
@@ -128,7 +129,12 @@ function HomePage({ products, phone }: HomePageProps) {
               {filteredProducts.length > 0 ? (
                 <div className="grid grid-cols-[repeat(auto-fill,minmax(280px,1fr))] gap-6 items-stretch">
                   {filteredProducts.map((product) => (
-                    <ProductCard key={product.id} product={product} phone={phone} />
+                    <ProductCard
+                      key={product.id}
+                      product={product}
+                      phone={phone}
+                      onAddToCart={onAddToCart}
+                    />
                   ))}
                 </div>
               ) : (
