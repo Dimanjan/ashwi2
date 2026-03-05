@@ -1,8 +1,8 @@
 function DesignInspiration() {
     const images = [
-        { src: 'https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?auto=format&fit=crop&q=80', alt: 'Modern Bedroom Design', label: 'Bedroom' },
-        { src: 'https://images.unsplash.com/photo-1586023492125-27b2c045efd7?auto=format&fit=crop&q=80', alt: 'Minimalist Dining Space', label: 'Dining' },
-        { src: 'https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&q=80', alt: 'Cozy Living Area', label: 'Living Room' },
+        { src: '/images/modern-bedroom.webp', alt: 'Modern Bedroom Design', label: 'Bedroom' },
+        { src: '/images/minimalist-dining.webp', alt: 'Minimalist Dining Space', label: 'Dining' },
+        { src: '/images/cozy-living.webp', alt: 'Cozy Living Area', label: 'Living Room' },
     ];
 
     return (

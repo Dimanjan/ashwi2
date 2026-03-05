@@ -16,7 +16,7 @@ function HeroBanner() {
                 </div>
                 <div className="flex-1 relative w-full h-full min-h-[300px] md:min-h-[400px]">
                     <div className="absolute inset-0 bg-brand-deep/20 z-10 mix-blend-multiply"></div>
-                    <img className="absolute inset-0 w-full h-full object-cover object-center" src="https://images.unsplash.com/photo-1555041469-a586c61ea9bc?auto=format&fit=crop&q=80" alt="Modern Bedroom Furniture" />
+                    <img className="absolute inset-0 w-full h-full object-cover object-center" src="/images/hero-modern-bedroom.webp" alt="Modern Bedroom Furniture" />
 
                     <div className="absolute right-4 md:right-10 top-1/2 -translate-y-1/2 text-center z-20 hidden md:block">
                         <div className="bg-[#FAF6F1]/90 backdrop-blur text-brand-deep p-6 rounded-xl shadow-[0_10px_30px_rgba(0,0,0,0.15)]">
