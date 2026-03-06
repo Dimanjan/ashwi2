@@ -11,7 +11,7 @@ function EffortlessCheckout() {
                         <div className="w-20 h-20 rounded-full bg-brand-deep text-white flex items-center justify-center text-3xl mb-5 border border-line">
                             <span role="img" aria-label="user">👤</span>
                         </div>
-                        <h3 className="font-bold text-ink text-[1rem]">Sign in or<br />Create an account</h3>
+                        <h3 className="font-bold text-ink text-[1rem]">Guest Checkout<br />No account needed</h3>
                     </div>
 
                     <div className="flex flex-col items-center text-center">
